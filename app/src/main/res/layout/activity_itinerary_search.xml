@@ -52,7 +52,7 @@
         android:inputType="textCapWords"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_destination"
-        tools:text="Name" />
+        tools:text="Departure" />
 
     <TextView
         android:id="@+id/text_date"
