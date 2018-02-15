@@ -7,7 +7,7 @@
     tools:context="fr.wcs.blablawild.ItinerarySearchActivity">
 
     <TextView
-        android:id="@+id/departureTitle"
+        android:id="@+id/text_departure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/departureValue"
+        android:id="@+id/edit_departure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -27,11 +27,11 @@
         android:ems="10"
         android:inputType="textCapWords"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/departureTitle"
+        app:layout_constraintTop_toBottomOf="@+id/text_departure"
         tools:text="Departure" />
 
     <TextView
-        android:id="@+id/destinationTitle"
+        android:id="@+id/text_destination"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -39,10 +39,10 @@
         android:layout_marginTop="8dp"
         android:text="@string/destination"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/departureValue" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_departure" />
 
     <EditText
-        android:id="@+id/destinationValue"
+        android:id="@+id/edit_destination"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -51,11 +51,11 @@
         android:ems="10"
         android:inputType="textCapWords"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/destinationTitle"
+        app:layout_constraintTop_toBottomOf="@+id/text_destination"
         tools:text="Name" />
 
     <TextView
-        android:id="@+id/dateTitle"
+        android:id="@+id/text_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -63,10 +63,10 @@
         android:layout_marginTop="8dp"
         android:text="@string/date"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/destinationValue" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_destination" />
 
     <EditText
-        android:id="@+id/dateValue"
+        android:id="@+id/edit_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -75,11 +75,11 @@
         android:focusable="false"
         android:inputType="date"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dateTitle"
+        app:layout_constraintTop_toBottomOf="@+id/text_date"
         tools:text="01/01/1970" />
 
     <Button
-        android:id="@+id/searchItinerary"
+        android:id="@+id/button_search_itinerary_action"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -88,5 +88,5 @@
         android:text="@string/search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dateValue" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_date" />
 </android.support.constraint.ConstraintLayout>
